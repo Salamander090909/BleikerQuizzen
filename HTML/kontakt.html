@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONTAKT OSS</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body class="kontaktBody">
+
+    <section class="Navbar">
+        <ul>
+        <li><a href="../index.html"><img src="../Img/BleikerQuizzenLogo.png" alt="Logo"></a></li>
+        <li><a href="../index.html#hero">Grafisk</a></li>
+        <li><a href="./quiz.html">Quiz</a></li>
+        <li><a href="../HTML/video.html">Video</a></li>
+        <li><a href="#">SoMe</a></li>
+        </ul>
+    </section>
+
+    <main class="kontaktSide">
+        <section class="kontaktCard">
+            <div class="kontaktIntro">
+                <p class="litenP">KONTAKT</p>
+                <h1>Ta kontakt med oss</h1>
+                <p>
+                    Har du spørsmål, tilbakemeldinger eller andre ting du vil ta opp.
+                    Send en melding!
+                </p>
+            </div>
+
+            <form action="../index.html" class="kontaktForm">
+                <label for="kontakt-email">Skriv din email</label>
+                <input id="kontakt-email" type="email" name="email" placeholder="olanordman@gmail.com..." required>
+
+                <label for="kontakt-name">Skriv fullt navn</label>
+                <input id="kontakt-name" type="text" name="name" placeholder="Ola Nordmann..." required>
+
+                <label for="kontakt-message">Melding</label>
+                <textarea id="kontakt-message" name="message" rows="7" placeholder="skriv melding her" required></textarea>
+
+                <button type="submit">Send inn</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #FAF0E6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  
  
@@ -91,7 +92,7 @@ body {
     width: 500px;
     height: 300px;
     border-radius: 30px;
-    background: linear-gradient(to bottom left, rgb(241, 141, 59), rgb(250, 250, 253));
+    background: linear-gradient(to bottom left, #f7941d, rgb(250, 250, 253));
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     margin: 100px 0px 200px 150px;
 }
@@ -126,13 +127,17 @@ body {
     background: linear-gradient(135deg, #1f2f4e, #3a5689);
 }
  
+#Signup {
+    margin: 38px auto;
+}
+
 .rememberLogInn {
     border: 1px solid transparent;
     padding: 30px;
     width: 250px;
-    height: 350px;
+    height: fit-content;
     border-radius: 30px;
-    background: rgb(63, 63, 100);
+    background: #445645;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     margin: 100px 0px 200px 150px;
     text-align: center;
@@ -152,7 +157,7 @@ body {
 }
  
 .loginForm input::placeholder {
-    color: rgb(111, 112, 142);
+    color: rgb(231, 231, 238);
 }
  
 .loginForm input:first-child {
@@ -179,7 +184,7 @@ body {
     text-decoration: none;
     color: rgb(175, 172, 172);
     font-size: 13px;
-    margin: 10px;
+    margin: 5px;
 }
  
 .sosialeLogin a {
@@ -195,6 +200,8 @@ body {
     margin-top: 20px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+    text-decoration: none;
+
 }
  
 .sosialeLogin p {
@@ -282,9 +289,12 @@ body {
  
 .footer a {
     text-decoration: none;
-    color: white;
+    color: rgb(247, 244, 244);
 }
  
+.footer p {
+    color: rgb(249, 249, 249);  
+}
 .quizPage {
     width: min(1200px, calc(100% - 48px));
     margin: 0 auto;
@@ -520,3 +530,175 @@ body {
     border-bottom: 0;
 }
  
+
+.kontaktBody {
+    height: 100%;
+    min-height: 100vh;
+    background-image: url(../Img/KontaktBakgrunn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.kontaktBody::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(20, 31, 51, 0.64), rgba(68, 86, 69, 0.38));
+}
+
+.kontaktSide {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+.kontaktCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+    padding: 32px;
+    border-radius: 32px;
+    background: rgba(255, 250, 245, 0.94);
+    box-shadow: 0 24px 48px rgba(18, 29, 47, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.kontaktIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #243558;
+}
+
+.litenP {
+    margin: 0 0 12px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    color: #445645;
+}
+
+.kontaktIntro h1 {
+    margin: 0 0 16px;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.kontaktIntro p {
+    margin: 0;
+    line-height: 1.7;
+    max-width: 42ch;
+}
+
+.kontaktForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 28px;
+    border-radius: 24px;
+    background: #445645;
+    box-shadow: 0 16px 30px rgba(18, 29, 47, 0.18);
+}
+
+.kontaktForm label {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.kontaktForm input,
+.kontaktForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.kontaktForm input::placeholder,
+.kontaktForm textarea::placeholder {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.kontaktForm textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.kontaktForm input:focus,
+.kontaktForm textarea:focus {
+    border-color: #f7941d;
+    box-shadow: 0 0 0 3px rgba(241, 141, 59, 0.2);
+}
+
+.kontaktForm button {
+    width: fit-content;
+    margin-top: 8px;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f7941d, #d9772c);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    transition: 0.1s;
+}
+
+.kontaktForm button:hover {
+    transform: translateY(-2px);
+}
+
+.mainCard {
+    width: 100%;
+}
+
+.textHero {
+    margin: 100px auto;
+    max-width: 700px;
+    padding: 36px 40px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(241, 141, 59, 0.95), rgba(255, 248, 241, 0.98));
+    box-shadow: 0 18px 34px rgba(36, 53, 88, 0.16);
+}
+
+.fullVideo {
+    width: 700px;
+    margin: 50px 0px 50px 300px;
+}
+
+.fullVersjon video {
+    width: 500px;
+    margin: 30px;
+    margin-top: 10px;
+}
+
+.fullVersjon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(253, 251, 251);
+    margin-bottom: 30px;
+    border: 1px solid white;
+    width: fit-content;
+    height: auto;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 16px 28px rgba(36, 53, 88, 0.28);
+    margin: 0 auto;
+
+}
+
