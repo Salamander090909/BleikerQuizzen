@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bleiker Quizzen</title>
   <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="./JavaScript/login.js" defer></script>
 </head>
 <body>
 
@@ -33,9 +35,30 @@
       </div>
     </div>
 
+    <div class="rememberLogInn">
+      <h1>LOGG INN!</h1><hr>
 
-    <div class="logoBanner">
-        <img src="./Img/BleikerQuizzenLogo.png" alt="BleikerQuizzenLogo">
+      <form action="index.html" class="loginForm">
+        <input type="email" name="email" placeholder="Skriv Email">
+
+        <input type="password" name="password" placeholder="Passord">
+        <hr>
+        <button type="submit">Log inn</button>
+      </form>
+      
+      <div class="forgot">
+        <a href="#">Glemt passord?</a>
+        <a href="#">Har ikke bruker?</a>
+      </div>
+
+      <div class="sosialeLogin">
+        <a href="#">
+          <i class="fa-brands fa-google"></i>
+          <p>eller logg inn med google</p>
+        </a>
+      </div>
+
+
     </div>
 
   </section>
@@ -72,6 +95,14 @@
           <video src="#">Your browser does not support the video.</video>
         </section>
       </li>
+    </ul>
+  </section>
+  
+  <section class="footer">
+    <ul>
+      <li><a href="./index.html"><img src="./Img/BleikerQuizzenLogo.png" alt="Logo"></a></li>
+      <li><a href="#">Laget av</a></li>
+      <li><a href="#">Kontakt</a></li>
     </ul>
   </section>
 </body>
