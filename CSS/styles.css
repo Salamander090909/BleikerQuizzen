@@ -148,6 +148,7 @@ body {
 }
 
 .loginForm label {
+    color: white;
     display: none;
 }
  
