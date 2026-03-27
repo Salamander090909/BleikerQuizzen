@@ -336,6 +336,10 @@ body {
 #videoCards {
     scroll-margin-top: 100px;
 }
+
+.VideoCards h1 {
+    margin-left: 50px;
+}
  
 .VideoCards p {
     width: 50ch;
@@ -374,24 +378,18 @@ body {
 }
 .footer {
     background-color: #445645;
+    margin-top: auto;
 }
  
 .footer ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: min(1200px, calc(100% - 64px));
-    margin: 0;
+    margin: 0 auto;
     padding: 14px 0;
-    margin-inline: auto;
-}
- 
-.footer li:first-child {
-    justify-content: flex-start;
-    flex: 0 0 auto;
-    margin-right: 32px;
 }
  
 .footer li {
@@ -399,6 +397,7 @@ body {
     align-items: center;
     justify-content: center;
     flex: 1;
+    text-align: center;
 }
  
 .footer img {

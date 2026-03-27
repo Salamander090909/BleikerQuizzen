@@ -90,7 +90,7 @@ const quiz = [
         correctAnswer: 2,
     },
     {
-        question: "Videospørsmål 1: Hvordan vasker du en asiet før du putter den i vaskemaskinen?",
+        question: "Videospørsmål 1: I kantinen er det en storkjøkken oppvaskmaskin, hvordan skal man vaske opp assieter før man putter de inn i oppvaskemaskinen?",
         video: "../Video/FerdigKantineFilm.mp4",
         choices: [
             { id: 1, label: "Null Såpe" },
