@@ -934,6 +934,7 @@ body {
     .Video2,
     .Video3 {
         flex-direction: column;
+        text-align: center;
     }
 
     .Video1 video,
@@ -947,14 +948,32 @@ body {
         width: 30ch;
     }
 
-    .VideoCards li {
-        width: 300px;
+    .VideoCards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .VideoCards ul {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+    }
+
+    .VideoCards li {
+        width: 350px;
+        align-items: center;
+        box-sizing: border-box;
     }
 
     .VideoCards h1 {
         font-size: 25px;
         width: 18ch;
+        margin-left: 0;
+        text-align: center;
     }
 
     .grafiskStorCard {
@@ -1047,6 +1066,10 @@ body {
 
     .SoMeSideTekst p {
         width: auto;
+    }
+
+    .SoMeSideTekst h1 {
+        font-size: 2rem;
     }
 
     .SoMeTiktok {
