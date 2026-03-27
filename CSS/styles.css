@@ -73,19 +73,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 40px;
+    margin-top: 0px;
 }
  
 .mainBanner p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
 }
- 
-.mainBanner h4 {
-    font-size: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: -20px;
-    color: rgb(103, 104, 116);
+
+.mainBanner .litenP {
+    font-size: 12px;
 }
+ 
 .mainBanner {
     border: 1px solid transparent;
     padding: 30px;
@@ -331,10 +330,6 @@ body {
     width: 2px;
     height: 260px;
     background-color: #445645;
-}
- 
-#videoCards {
-    scroll-margin-top: 100px;
 }
 
 .VideoCards h1 {
@@ -885,4 +880,72 @@ body {
 
 .SoMeTiktok {
     margin-left: 20px;
+}
+
+
+@media (max-width:600px) {
+
+    .mainCards {
+        flex-direction: column;
+    }
+    .mainBanner h1 {
+        font-size: 25px;
+        width: 20ch;
+    }
+
+
+    .mainBanner {
+        width: 300px;
+        height: 250px;
+        margin: 50px auto;
+    }
+
+    .rememberLogInn {
+        margin: 0 auto;
+    }
+
+    .grafiskCard {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 45px;
+    }
+
+
+    .grafiskBilde img {
+        width: 350px;
+    }
+
+    .grafiskTekst {
+        width: 30ch;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Video1,
+    .Video2,
+    .Video3 {
+        flex-direction: column;
+    }
+
+    .Video1 video,
+    .Video2 video,
+    .Video3 video {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .VideoCards p {
+        width: 30ch;
+    }
+
+    .VideoCards li {
+        width: 300px;
+        align-items: center;
+    }
+
+    .VideoCards h1 {
+        font-size: 25px;
+        width: 15ch;
+    }
 }
