@@ -146,6 +146,10 @@ body {
 .rememberLogInn h1 {
     color: white;
 }
+
+.loginForm label {
+    display: none;
+}
  
 .loginForm input {
     background-color: transparent;
