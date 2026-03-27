@@ -977,12 +977,22 @@ body {
     }
 
     .grafiskStorCard {
-        width: 370px;
+        width: 300px;
         align-items: center;
     }
 
+    .grafiskSide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .grafiskSideTekst {
+        width: 100%;
+    }
+
     .grafiskSideTekst p {
-        width: 35ch;
+        width: 18rem;
     }
 
     .grafiskSideTekst h1 {
